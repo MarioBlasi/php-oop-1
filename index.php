@@ -31,9 +31,7 @@ require __DIR__ . './Models/Movie.php';
     </div>
   </header>
   <main class="container mt-5 shadow text-center">
-
-
-    <div class="shadow ">
+    <div class="shadow mt-3">
         <h4 class="">Film 1:</h4>
         <hr>
         <div class="color">
@@ -43,6 +41,7 @@ require __DIR__ . './Models/Movie.php';
         </div>
     </div>
     <div class="shadow">
+        <hr>
         <h4 class="">Film 2:</h4>
         <hr>
         <div class="color">
@@ -52,6 +51,7 @@ require __DIR__ . './Models/Movie.php';
         </div>
     </div>
     <div class="shadow">
+        <hr>
         <h4 class="">Film 3:</h4>
         <hr>
         <div class="color">
@@ -61,6 +61,7 @@ require __DIR__ . './Models/Movie.php';
         </div>
     </div>
     <div class="shadow">
+        <hr>
         <h4 class="">Film 4:</h4>
         <hr>
         <div class="color">
@@ -70,6 +71,7 @@ require __DIR__ . './Models/Movie.php';
         </div>
     </div>
     <div class="shadow">
+        <hr>
         <h4 class="">Film 5:</h4>
         <hr>
         <div class="color">
