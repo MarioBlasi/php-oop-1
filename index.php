@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,36 +18,64 @@
     <!-- place navbar here -->
   </header>
   <main class="container mt-5 shadow text-center">
-  <?php
-        class Fruit {
-        // Properties
-        public $name;
-        public $color;
 
-        // Methods
-        function set_name($name) {
+    <?php
+
+    class Genre {
+       public $name;
+
+        public function __construct($name) {
             $this->name = $name;
         }
-        function get_name() {
+
+        public function getName() {
             return $this->name;
         }
-        function set_color($color) {
-            $this->color = $color;
-        }
-        function get_color() {
-            return $this->color;
-        }
-}
+    }
 
-        $apple = new Fruit();
-        $apple->set_name('Apple');
-        $apple->set_color('Red');
-        echo "Name: " . $apple->get_name();
-        echo "<br>";
-        echo "Color: " .  $apple->get_color();
+    class Movie {
+       public $title;
+       public $year;
+       public $genre;
 
-        var_dump($apple);
-?>
+        public function __construct(string $title, string $year, Genre $genre) {
+            $this->title = $title;
+            $this->year = $year;
+            $this->genre = $genre;
+        }
+
+        public function getTitle() {
+            return $this->title;
+        }
+
+        public function getYear() {
+            return $this->year;
+        }
+
+        public function getGenre() {
+            return $this->genre;
+        }
+    }
+
+    // Creazione degli oggetti Genre
+    $genre1 = new Genre("Commedia");
+    $genre2 = new Genre("Azione");
+
+    // Creazione degli oggetti Movie
+    $movie1 = new Movie("Film 1", 2020, $genre1);
+    $movie2 = new Movie("Film 2", 2018, $genre2);
+
+    ?>
+
+    <h2>Film 1:</h2>
+    <p>Titolo: <?php echo $movie1->getTitle(); ?></p>
+    <p>Anno: <?php echo $movie1->getYear(); ?></p>
+    <p>Genere: <?php echo $movie1->getGenre()->getName(); ?></p>
+
+    <h2>Film 2:</h2>
+    <p>Titolo: <?php echo $movie2->getTitle(); ?></p>
+    <p>Anno: <?php echo $movie2->getYear(); ?></p>
+    <p>Genere: <?php echo $movie2->getGenre()->getName(); ?></p>
 
   </main>
   <footer>
@@ -55,12 +83,4 @@
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-</body>
-
-</html>
+    integrity="sha384-oBqDVmMz9ATK
