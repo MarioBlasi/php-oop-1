@@ -1,3 +1,6 @@
+body {
+  background-color: rgba(0, 0, 255, 0.158);
+}
 h1 {
   transition: transform 0.3s;
 }

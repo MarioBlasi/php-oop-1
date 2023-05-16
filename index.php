@@ -30,10 +30,10 @@ require __DIR__ . './Models/Movie.php';
         </h1>
     </div>
   </header>
-  <main class="container mt-4 shadow text-center">
+  <main class="container mt-5 shadow text-center">
 
 
-    <div class="shadow">
+    <div class="shadow ">
         <h4 class="">Film 1:</h4>
         <hr>
         <div class="color">
