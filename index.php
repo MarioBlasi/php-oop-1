@@ -35,6 +35,7 @@ require __DIR__ . './Models/Movie.php';
         <h4 class="">Film 1:</h4>
         <hr>
         <div class="color">
+            <img src="https://picsum.photos/800/300" alt="">
             <p>Titolo: <?php echo $movie1->getTitle(); ?></p>
             <p>Anno: <?php echo $movie1->getYear(); ?></p>
             <p>Genere: <?php echo $movie1->getGenre()->getName(); ?></p>
@@ -45,6 +46,7 @@ require __DIR__ . './Models/Movie.php';
         <h4 class="">Film 2:</h4>
         <hr>
         <div class="color">
+        <img src="https://unsplash.it/800/300?image" alt="">
             <p>Titolo: <?php echo $movie2->getTitle(); ?></p>
             <p>Anno: <?php echo $movie2->getYear(); ?></p>
             <p>Genere: <?php echo $movie2->getGenre()->getName(); ?></p>
@@ -55,6 +57,7 @@ require __DIR__ . './Models/Movie.php';
         <h4 class="">Film 3:</h4>
         <hr>
         <div class="color">
+        <img src="https://picsum.photos/seed/picsum/800/300" alt="">
             <p>Titolo: <?php echo $movie3->getTitle(); ?></p>
             <p>Anno: <?php echo $movie3->getYear(); ?></p>
             <p>Genere: <?php echo $movie3->getGenre()->getName(); ?></p>
@@ -65,6 +68,7 @@ require __DIR__ . './Models/Movie.php';
         <h4 class="">Film 4:</h4>
         <hr>
         <div class="color">
+        <img src="https://unsplash.it/800/300?image=" alt="">
             <p>Titolo: <?php echo $movie4->getTitle(); ?></p>
             <p>Anno: <?php echo $movie4->getYear(); ?></p>
             <p>Genere: <?php echo $movie4->getGenre()->getName(); ?></p>
@@ -75,6 +79,7 @@ require __DIR__ . './Models/Movie.php';
         <h4 class="">Film 5:</h4>
         <hr>
         <div class="color">
+        <img src="https://picsum.photos/800/300?grayscale" alt="">
             <p>Titolo: <?php echo $movie5->getTitle(); ?></p>
             <p>Anno: <?php echo $movie5->getYear(); ?></p>
             <p>Genere: <?php echo $movie5->getGenre()->getName(); ?></p>
