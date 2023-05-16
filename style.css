@@ -1,0 +1,23 @@
+h1 {
+  transition: transform 0.3s;
+}
+h1:hover {
+  transform: scaleY(1.8);
+}
+
+h4 {
+  transition: transform 0.3s;
+}
+
+h4:hover {
+  transform: scale(1.8);
+}
+
+.color {
+  color: black;
+  transition: color 0.3s;
+}
+
+.color:hover {
+  color: red;
+}
