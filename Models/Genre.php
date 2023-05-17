@@ -11,11 +11,12 @@ class Genre {
      }
  }
 
- // Creazione degli oggetti Genre
- $genre1 = new Genre("Commedia");
- $genre2 = new Genre("Azione");
- $genre3 = new Genre("Fantasy");
- $genre4 = new Genre("Horror");
- $genre5 = new Genre("Sci-fi");
-
+ // Creazione dell'array di generi
+ $genres = [
+    new Genre("Commedia"),
+    new Genre("Azione"),
+    new Genre("Fantasy"),
+    new Genre("Horror"),
+    new Genre("Sci-fi")
+ ];
  ?>
