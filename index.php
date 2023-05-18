@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . './Models/Genre.php';
+require __DIR__ . '/Models/Genre.php';
 
-require __DIR__ . './Models/Movie.php';
+require __DIR__ . '/Models/Movie.php';
 
 
 ?>
